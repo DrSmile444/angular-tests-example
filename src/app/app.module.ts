@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared';
+import { appServices } from './services';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { SharedModule } from './shared';
     AppComponent
   ],
   providers: [
+    ...appServices,
   ],
   bootstrap: [AppComponent]
 })

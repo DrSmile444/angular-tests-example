@@ -1,8 +1,8 @@
 import { MockUtil } from './utils';
-import { ConfigService } from '../services';
 import { CommonMocks } from './values/common-mocks';
 import { of } from 'rxjs';
-import { UserService } from '../user/services';
+import { UserService } from '../user/services/user.service';
+import { ConfigService } from '../services';
 
 const { getProviderOf } = MockUtil;
 

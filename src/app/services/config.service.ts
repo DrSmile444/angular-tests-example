@@ -3,7 +3,7 @@ import { Observable, of } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
 import { Config } from '../shared/interfaces';
-import { CommonMocks, mockOf } from '../testing';
+import { CommonMocks, mockOf } from '../testing/values';
 
 @Injectable()
 export class ConfigService {
