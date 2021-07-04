@@ -1,0 +1,8 @@
+<spinner *ngIf="isLoading"></spinner>
+<div *ngIf="!isLoading">
+  <ul *ngFor="let user of usersList">
+    <li>
+      <user-card [user]="user"></user-card>
+    </li>
+  </ul>
+</div>
