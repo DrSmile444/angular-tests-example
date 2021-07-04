@@ -3,6 +3,7 @@ import { Observable, of } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
 import { Config } from '../shared/interfaces';
+import { CommonMocks, mockOf } from '../testing';
 
 @Injectable()
 export class ConfigService {
@@ -11,13 +12,7 @@ export class ConfigService {
   constructor() {}
 
   getConfig(): Observable<Config> {
-    return of({
-      currentCity: 'Wisokyburgh',
-      disabledCities: [
-        'Gwenborough',
-        'McKenziehaven',
-      ]
-    } as Config).pipe(
+    return mockOf(this.getConfig.name, {}, CommonMocks.config).pipe(
       tap((config) => this.config = config),
     );
   }

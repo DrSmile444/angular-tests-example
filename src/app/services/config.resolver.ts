@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 
-import { Config } from '../shared/interfaces';
+import { Config } from '../shared';
 import { ConfigService } from './config.service';
 
 @Injectable()
