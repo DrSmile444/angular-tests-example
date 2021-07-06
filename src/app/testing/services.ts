@@ -1,5 +1,6 @@
-import { ApiService, ConfigService } from '../shared/services';
+import { ApiService } from '../shared/services';
 import { UserService } from '../user/services/user.service';
+import { ConfigService } from '../services';
 
 export type ServicesSpyParams = Map<any, { name: string, methods: string[] }>;
 
